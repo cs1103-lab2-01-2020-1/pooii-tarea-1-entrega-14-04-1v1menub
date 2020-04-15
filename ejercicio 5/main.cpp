@@ -7,53 +7,56 @@
 using namespace std;
 
 int main() {
-    Integer o2 = 6;
+    Integer o1;
+    cout << "Ingrese valor para o1: " << endl;
+    cin >> o1;
+    cout << o1 << endl;
+    Integer o2 = 12;
     cout << o2 << endl;
     Integer o3 = o2;
     cout << o3 << endl;
-    Integer o4 = 3;
-    cout << o2 + o4 << endl;
-    cout << o3 - o4 << endl;
-    cout << o3 * o4 << endl;
-    cout << o3 / o4 << endl;
-    //cout << o3 ^ o4 << endl; // no se pq no funca
-    if(o3 > o4) {
+    cout << o2 + o1 << endl;
+    cout << o3 - o1 << endl;
+    cout << o3 * o1 << endl;
+    cout << o3 / o1 << endl;
+    //cout << o3 ^ o1 << endl; esta no funciona no se porque
+    if(o1 > o2) {
         cout << "TRUE" << endl;
     }
     else {
         cout << "FALSE" << endl;
     }
-    if(o3 > o4) {
+    if(o1 > o2) {
         cout << "TRUE" << endl;
     }
     else {
         cout << "FALSE" << endl;
     }
-    if(o3 >= o4) {
+    if(o1 >= o2) {
         cout << "TRUE" << endl;
     }
     else {
         cout << "FALSE" << endl;
     }
-    if(o3 < o4) {
+    if(o1 < o2) {
         cout << "TRUE" << endl;
     }
     else {
         cout << "FALSE" << endl;
     }
-    if(o3 <= o4) {
+    if(o1 <= o2) {
         cout << "TRUE" << endl;
     }
     else {
         cout << "FALSE" << endl;
     }
-    if(o3 != o4) {
+    if(o1 != o2) {
         cout << "TRUE" << endl;
     }
     else {
         cout << "FALSE" << endl;
     }
-    if(o3 == o4) {
+    if(o1 == o2) {
         cout << "TRUE" << endl;
     }
     else {

@@ -6,6 +6,7 @@
 #define POOII_TAREA_1_ENTREGA_14_04_1V1MENUB_INTEGER_H
 
 #include <iostream>
+#include <cmath>
 
 class Integer {
     int value;
@@ -17,7 +18,7 @@ public:
     Integer operator+(int _value);
     operator int();
     friend std::ostream& operator << (std::ostream& os, const Integer& lol);
-    friend std::istream& operator >> (std::istream& os, const Integer& lol);
+    friend std::istream& operator >> (std::istream& os, Integer& lol);
     Integer operator+=(int _value);
     Integer operator-(int _value);
     Integer operator-=(int _value);

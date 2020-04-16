@@ -3,6 +3,7 @@
 //
 
 #include "Integer.h"
+#include "Number.h"
 
 using namespace std;
 
@@ -62,6 +63,17 @@ int main() {
     else {
         cout << "FALSE" << endl;
     }
+
+    Number<int> i1;
+    i1 = 68;
+    //cout << "Ingrese valor de i1: " << endl;
+    //cin >> i1;
+    //Number<int> i2= 69;
+    //cout << i1;
+
+
+
+
     return 0;
 };
 

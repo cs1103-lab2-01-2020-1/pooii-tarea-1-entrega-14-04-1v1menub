@@ -31,8 +31,11 @@ public:
     bool operator<=(T _value);
     bool operator!=(T _value);
     bool operator==(T _value);
-    friend std::ostream& operator << (std::ostream& os, const Number& lol);
-    friend std::istream& operator >> (std::istream& os, Number& lol);
+
+    template <typename F>
+    friend std::ostream& operator << (std::ostream& os, const Number<F>& lol);
+    template <typename F>
+    friend std::istream& operator >> (std::istream& os, Number<F>& lol);
 };
 
 

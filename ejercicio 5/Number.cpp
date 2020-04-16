@@ -128,14 +128,14 @@ bool Number<T>::operator==(T _value) {
     }
 }
 
-template<typename T>
-std::ostream &operator<<(std::ostream &os, const Number<T> &lol) {
+template<typename F>
+std::ostream &operator<<(std::ostream &os, const Number<F> &lol) {
     os << lol.value;
     return os;
 }
 
-template<typename T>
-std::istream &operator>>(std::istream &os, Number<T> &lol) {
+template<typename F>
+std::istream &operator>>(std::istream &os, Number<F> &lol) {
     os >> lol.value;
     return os;
 }

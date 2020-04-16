@@ -128,8 +128,14 @@ bool Number<T>::operator==(T _value) {
     }
 }
 
-std::ostream &operator<<(std::ostream &os, const Number &lol) { //no se  cual es el error aca. "Use of class template 'Number' requires template argument"
+template<typename T>
+std::ostream &operator<<(std::ostream &os, const Number<T> &lol) {
+    os << lol.value;
+    return os;
 }
 
-std::istream &operator>>(std::istream &os, Number &lol) {  //no se cual es el error aca. Use of class template 'Number' requires template argumentK
+template<typename T>
+std::istream &operator>>(std::istream &os, Number<T> &lol) {
+    os >> lol.value;
+    return os;
 }

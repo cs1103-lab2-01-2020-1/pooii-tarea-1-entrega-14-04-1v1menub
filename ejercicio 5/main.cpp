@@ -64,8 +64,8 @@ int main() {
         cout << "FALSE" << endl;
     }
 
-    Number<int> i1;
-    i1 = 68;
+    //Number<int> i1;
+    //i1 = 68;
     //cout << "Ingrese valor de i1: " << endl;
     //cin >> i1;
     //Number<int> i2= 69;

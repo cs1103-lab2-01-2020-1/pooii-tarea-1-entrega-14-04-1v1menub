@@ -25,7 +25,7 @@ Integer Integer::operator+(int _value) {
 }
 
 Integer::operator int() {
-    return value;
+    return (int)value;
 }
 
 std::ostream &operator<<(std::ostream &os, const Integer &lol) {

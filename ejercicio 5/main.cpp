@@ -12,7 +12,7 @@ int main() {
     cout << "Ingrese valor para o1: " << endl;
     cin >> o1;
     cout << o1 << endl;
-    Integer o2 = 12;
+    Integer o2 = 3;
     cout << o2 << endl;
     Integer o3 = o2;
     cout << o3 << endl;
@@ -20,7 +20,7 @@ int main() {
     cout << o3 - o1 << endl;
     cout << o3 * o1 << endl;
     cout << o3 / o1 << endl;
-    //cout << o3 ^ o1 << endl; esta no funciona no se porque
+    cout << (o3 ^ o1) << endl;
     if(o1 > o2) {
         cout << "TRUE" << endl;
     }
